@@ -183,3 +183,14 @@ footer > p > a:hover {
     text-decoration: underline;
     color: orange;
 }
+
+@media screen and (max-width: 500px) {
+
+    main {
+        width: 90%;
+        margin: 0px;
+        padding: 20px;
+
+    }
+
+}
