@@ -2,6 +2,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+
+:root{
+    --color-white: #ffffff;
+    --link-orange: #bea32a;
+    --border-orange: #b87f15;
+    --button-orange: #ffa7039a;
+    --footer-moroom: #6e4e3b;
+    --color-green: #4F5A67;
+    --color-fonte: #f5a30c0c;
+
+}
+
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -12,11 +26,11 @@ body {
 }
 
 header {
-   background-color: rgb(255, 255, 255);
+   background-color: var(--color-white);
    width: 100%;
    height: 139px;
    margin-bottom: 0px;
-   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.301);
+   box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.300);
 }
  .logo {
     display: block;
@@ -35,12 +49,12 @@ h1 {
     font-family: "Open Sans", sans-serif;
     font-size: 40px;
     display: inline-block;
-    border-bottom: 3px solid rgb(184, 127, 21);
+    border-bottom: 3px solid var(--border-orange);
 }
 
 .autores {
     font-weight: 500;
-    color: #4F5A67;
+    color: var(--color-green);
     font-size: 15px;
     margin-bottom: -9px;
 }
@@ -49,11 +63,11 @@ h1 {
     display: inline;
     text-decoration: none;
     font-weight: 400;
-    color: #8a7c3e;
+    color: var(--link-orange);
 }
 
 .autores > a:hover {
-    color: orange;
+    color: var(--button-orange);
     text-decoration: underline;
 
 }
@@ -61,7 +75,7 @@ h1 {
 .data {
     font-weight: 300;
     font-size: 15px;
-    color: #4F5A67;
+    color: var(--color-green);
  }
 
 
@@ -73,14 +87,14 @@ h2 {
     margin-top: 10px;
     margin-bottom: 20px;
     display: inline-block;
-    border-bottom: 3px solid rgb(184, 127, 21);
+    border-bottom: 3px solid var(--border-orange);
 }
 
 h3 {
     margin-top: 10px;
     margin-bottom: 20px;
     display: inline-block;
-    border-bottom: 3px solid rgb(167, 118, 29);
+    border-bottom: 3px solid var(--border-orange);
 }
 
 p {
@@ -89,12 +103,13 @@ p {
 }
 
 a {
-    color: #bea32a;
+    color: var(--link-orange);
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;   
+    text-decoration: underline; 
+    color: var(--button-orange);  
 }
 .imagem {
     display: flex;
@@ -106,13 +121,13 @@ a:hover {
     justify-content: center;
     font-size: 14px;
     margin-top: 10px;
-    color: #4F5A67;
+    color: var(--color-green);
 }
 
 .creditos-da-imagem > a {
-    color: orange;
+    color: var(--link-orange);
     text-decoration: none;
-    border: 1px solid orange;
+    border: 1px solid var(--link-orange);
     padding: 0px 5px 0px 5px;
     border-radius: 10px;
     transition: 0.5s;
@@ -120,15 +135,15 @@ a:hover {
 }
 
 .creditos-da-imagem > a:hover {
-    background-color: rgba(255, 167, 3, 0.603);
-    color: white;
+    background-color: var(--link-orange);
+    border: 1px solid var(--link-orange);
+    color: var(--color-white);
 }
 
 .fontes {
-    border-top: 2px solid rgba(185, 116, 51, 0.192);
-    border-radius: 5px;
-    background-color: rgb(253, 248, 248);
-    height: 170px;
+    border-top: 2px solid var(--border-orange);
+    background-color: var(--color-fonte);
+    height: 185px;
     margin-bottom: 15px;
 }
 
@@ -137,7 +152,7 @@ a:hover {
     justify-content: center;
     padding-top: 10px;
     padding-left: 10px;
-    color: #4F5A67;
+    color: var(--color-green);
 }
 
 .fontes > ul > li {
@@ -148,8 +163,8 @@ a:hover {
 }
 
 .fontes a {
-    color: orange;
-    border: 1px solid orange;
+    color: var(--link-orange);
+    border: 1px solid var(--link-orange);
     border-radius: 10px;
     padding: 0px 5px 0px 5px;
     text-decoration: none;
@@ -158,30 +173,31 @@ a:hover {
 }
 
 .fontes a:hover {
-    background-color: rgba(255, 167, 3, 0.603);
-    color: white;
+    background-color: var(--link-orange);
+    border: 1px solid var(--link-orange);
+    color: var(--color-white);
 }
 
 
 footer {
-    background-color: #6b3E26;
+    background-color: var(--footer-moroom);
     padding: 10px;
 }
 
 footer > p {
     display: flex;
     justify-content: center;
-    color: #bea32a;
+    color: white;
 }
 
 footer > p > a {
-    color: aliceblue;
+    color: var(--link-orange);
     text-decoration: none;
 }
 
 footer > p > a:hover {
     text-decoration: underline;
-    color: orange;
+    color: var(--button-orange);
 }
 
 @media screen and (max-width: 500px) {
