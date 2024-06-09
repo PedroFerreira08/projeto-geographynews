@@ -88,6 +88,14 @@ p {
     line-height: 35px;
 }
 
+a {
+    color: #bea32a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;   
+}
 .imagem {
     display: flex;
     justify-content: center;
