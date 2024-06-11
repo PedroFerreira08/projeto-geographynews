@@ -11,7 +11,6 @@
     --footer-moroom: #6e4e3b;
     --color-green: #4F5A67;
     --color-fonte: #f5a30c0c;
-
 }
 
 * {
@@ -69,7 +68,6 @@ h1 {
     font-size: 13px;
     color: var(--color-green);
  }
-
 
 section {
     margin-bottom: 20px;
