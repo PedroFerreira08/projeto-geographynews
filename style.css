@@ -41,7 +41,6 @@ h1 {
     margin: 30px auto 10px auto;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-size: 40px;
-    border-bottom: 3px solid var(--border-orange);
 }
 
 .autores {
@@ -65,7 +64,7 @@ h1 {
 
 .data {
     font-weight: 300;
-    font-size: 13px;
+    font-size: 12.4px;
     color: var(--color-green);
  }
 
@@ -77,19 +76,21 @@ h2 {
     margin-top: 10px;
     margin-bottom: 20px;
     display: inline-block;
-    border-bottom: 3px solid var(--border-orange);
 }
 
 h3 {
     margin-top: 10px;
     margin-bottom: 20px;
     display: inline-block;
-    border-bottom: 3px solid var(--border-orange);
 }
 
 p {
     margin-bottom: 15px;
     line-height: 35px;
+}
+
+.border {
+    border-bottom: 3px solid var(--border-orange);
 }
 
 a {
@@ -101,6 +102,7 @@ a:hover {
     text-decoration: underline; 
     color: var(--button-orange);  
 }
+
 .imagem {
     display: flex;
     justify-content: center;
